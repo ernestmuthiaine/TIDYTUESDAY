@@ -16,7 +16,7 @@ meru_crops_plot<-crops %>%
   mutate(percentage=round(Population/sum(Population,na.rm=T)*100,1)) %>% 
   ggplot(aes(x=reorder(Crops,-percentage),y=percentage,fill=Crops))+
   geom_bar(stat='identity')+
-  labs(title='DISTRIBUTION OF HOUSEHOLDS GROWING PERMANENT CROPS IN MERU COUNTY',
+  labs(title='HOUSEHOLDS GROWING PERMANENT CROPS IN MERU COUNTY',
        X='Crops',
        y='percentage',
        caption='Twitter: @ernestmuthiaine')+
@@ -28,4 +28,4 @@ meru_crops_plot<-crops %>%
         axis.title = element_blank(),
         legend.position = 'none')
 
-ggsave('meru_crops_plot.png',width=6,height=6)
+ggsave('meru_crops_plot.png',width=5,height=5)
