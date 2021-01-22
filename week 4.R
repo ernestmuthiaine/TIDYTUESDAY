@@ -19,7 +19,7 @@ meru_crops_plot<-crops %>%
   labs(title='HOUSEHOLDS GROWING PERMANENT CROPS IN MERU COUNTY',
        X='Crops',
        y='percentage',
-       caption='Twitter: @ernestmuthiaine')+
+       caption='Twitter: @MuthiaineErnest')+
   geom_text(aes(label=paste0(percentage,'%')),vjust=-0.5,na.rm=T)+
   theme(plot.title=element_text(size=14,face='bold'),
         panel.background =element_rect(fill=NA),
