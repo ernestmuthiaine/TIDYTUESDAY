@@ -36,7 +36,7 @@ ea_plastics1 %>%
   summarise(total=sum(plastic_count)) %>% 
   drop_na(total) %>% 
   ggplot(aes(x=plastic_type,y=total,fill=plastic_type))+
-  geom_bar(stat='identity',width = 0.5,na.rm=T)+
+  geom_bar(stat='identity',width = 0.5)+
   labs(title='plastic pollution in kenya,tanzania and rwanda',
        x='plastic',
        y='count',
