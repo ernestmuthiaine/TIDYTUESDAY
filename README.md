@@ -1,2 +1,2 @@
-# TIDYTUESDAY
-weekly tidy tuesday projects
+TIDYVERSE TUESDAY
+weekly tidyverse tuesday projects
